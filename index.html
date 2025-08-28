@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width,initial-scale=1" />
+		<title>Git & GitHub Guide — Landing</title>
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="assets/css/styles.css" />
+	</head>
+	<body class="bg-gray-50 text-gray-800">
+		<header class="bg-white shadow">
+			<div
+				class="max-w-5xl mx-auto py-6 px-4 flex items-center justify-between"
+			>
+				<h1 class="text-2xl font-semibold">Git & GitHub — Quick Guide</h1>
+				<nav class="space-x-4">
+					<a href="login.html" class="text-sm text-blue-600 hover:underline"
+						>Login</a
+					>
+					<a href="signup.html" class="text-sm text-gray-600 hover:underline"
+						>Sign Up</a
+					>
+				</nav>
+			</div>
+		</header>
+
+		<main class="max-w-5xl mx-auto p-6">
+			<section class="mb-8">
+				<h2 class="text-xl font-bold mb-2">Quick overview</h2>
+				<p class="text-gray-600">
+					This site shows the basic steps to initialize a Git repo in VS Code
+					and publish it to GitHub. Replace the placeholder images with
+					screenshots later.
+				</p>
+			</section>
+
+			<section class="grid md:grid-cols-2 gap-6">
+				<div class="space-y-4">
+					<h3 class="text-lg font-semibold">
+						Steps to initialize Git and publish (summary)
+					</h3>
+
+					<ol class="list-decimal pl-5 space-y-3 text-gray-700">
+						<li>
+							<strong>Open your project in VS Code</strong>
+							<div class="mt-2 text-sm text-gray-500">
+								Open the folder that contains your project files in VS Code.
+							</div>
+						</li>
+						<li>
+							<strong>Initialize a Git repository</strong>
+							<div class="mt-2 text-sm text-gray-500">
+								Use the Source Control panel or run
+								<code class="bg-gray-100 px-1 rounded">git init</code> in the
+								terminal.
+							</div>
+						</li>
+						<li>
+							<strong>Make first commit</strong>
+							<div class="mt-2 text-sm text-gray-500">
+								Stage files and commit using the UI or
+								<code class="bg-gray-100 px-1 rounded">git add .</code> and
+								<code class="bg-gray-100 px-1 rounded"
+									>git commit -m "Initial commit"</code
+								>.
+							</div>
+						</li>
+						<li>
+							<strong>Create repository on GitHub</strong>
+							<div class="mt-2 text-sm text-gray-500">
+								Create a new repo on github.com and copy the remote URL.
+							</div>
+						</li>
+						<li>
+							<strong>Push from VS Code</strong>
+							<div class="mt-2 text-sm text-gray-500">
+								Add remote and push:
+								<code class="bg-gray-100 px-1 rounded"
+									>git remote add origin &lt;url&gt;</code
+								>,
+								<code class="bg-gray-100 px-1 rounded"
+									>git push -u origin main</code
+								>.
+							</div>
+						</li>
+						<li>
+							<strong>Verify on GitHub</strong>
+							<div class="mt-2 text-sm text-gray-500">
+								Open the repo page on GitHub to confirm files are published.
+							</div>
+						</li>
+					</ol>
+				</div>
+
+				<div class="space-y-4">
+					<h3 class="text-lg font-semibold">
+						Visual walkthrough (placeholders)
+					</h3>
+
+					<div class="grid gap-4">
+						<div class="bg-white p-4 rounded shadow">
+							<img
+								src="assets/images/step1.svg"
+								alt="Step 1 placeholder"
+								class="w-full h-32 object-contain mb-3"
+							/>
+							<div class="text-sm font-medium">
+								Step 1 — Open folder in VS Code
+							</div>
+							<div class="text-xs text-gray-500">
+								Replace with screenshot of VS Code opening the project folder.
+							</div>
+						</div>
+
+						<div class="bg-white p-4 rounded shadow">
+							<img
+								src="assets/images/step2.svg"
+								alt="Step 2 placeholder"
+								class="w-full h-32 object-contain mb-3"
+							/>
+							<div class="text-sm font-medium">Step 2 — Initialize Git</div>
+							<div class="text-xs text-gray-500">
+								Replace with screenshot of git init or Source Control panel.
+							</div>
+						</div>
+
+						<div class="bg-white p-4 rounded shadow">
+							<img
+								src="assets/images/step3.svg"
+								alt="Step 3 placeholder"
+								class="w-full h-32 object-contain mb-3"
+							/>
+							<div class="text-sm font-medium">
+								Step 3 — Commit & Add Remote
+							</div>
+							<div class="text-xs text-gray-500">
+								Replace with screenshot of commit and adding remote.
+							</div>
+						</div>
+
+						<div class="bg-white p-4 rounded shadow">
+							<img
+								src="assets/images/step4.svg"
+								alt="Step 4 placeholder"
+								class="w-full h-32 object-contain mb-3"
+							/>
+							<div class="text-sm font-medium">Step 4 — Push and Verify</div>
+							<div class="text-xs text-gray-500">
+								Replace with screenshot showing repository on GitHub.
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="mt-8 bg-white p-4 rounded shadow">
+				<h3 class="text-lg font-semibold">Resources</h3>
+				<ul class="mt-2 space-y-1 text-sm text-gray-600">
+					<li>- Official Git docs: https://git-scm.com/docs</li>
+					<li>- GitHub Docs: https://docs.github.com</li>
+					<li>- VS Code Git integration: use the Source Control sidebar</li>
+				</ul>
+			</section>
+		</main>
+
+		<footer class="max-w-5xl mx-auto p-4 text-center text-xs text-gray-500">
+			Made as a simple guide — replace placeholders with real screenshots when
+			ready.
+		</footer>
+	</body>
+</html>
